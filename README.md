@@ -27,11 +27,21 @@ python app.py
 
 ## Usage
 
-Send a POST request to /analyze with an image file:
+**Option 1 — Using curl (Terminal)**
 
 curl -X POST -F "image=@your_image.jpg" http://127.0.0.1:5000/analyze
 
-You'll get back something like:
+**Option 2 — Using Postman**
+
+1. Open Postman
+2. Set method to POST
+3. URL: http://127.0.0.1:5000/analyze
+4. Go to Body → form-data
+5. Key: image, Type: File
+6. Select your image
+7. Click Send
+
+## Example Response
 
 [
   {"label": "beagle", "score": 0.94},
